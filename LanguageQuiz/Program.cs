@@ -24,8 +24,6 @@ do
         };
         String UserInput = Console.ReadLine();
         
-
-        //int UserInputInt = Convert.ToInt32(UserInput);
         
         
         
