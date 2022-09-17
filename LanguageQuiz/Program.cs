@@ -3,7 +3,7 @@ using LanguageQuiz;
 
 Console.WriteLine("French quiz");
 
-FrenchQuiz quiz = new FrenchQuiz();
+FrenchQuizFromFile quiz = new FrenchQuizFromFile();
 
 quiz.startQuiz();
 

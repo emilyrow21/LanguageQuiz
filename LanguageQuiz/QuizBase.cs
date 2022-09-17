@@ -10,7 +10,7 @@ namespace LanguageQuiz
     {
         string? currentUser;
         Dictionary<int, QuizQuestion>? allquestions;
-        int currentQuestion=-1;
+        int currentQuestion = 0;
         private int score;
         QuizQuestion nextquestion;
 
@@ -43,7 +43,11 @@ namespace LanguageQuiz
             if (currentQuestion + 1 <= allquestions.Count)
             {
                 currentQuestion++;
-                _ = allquestions.TryGetValue(currentQuestion, out nextquestion);
+                nextquestion = allquestions[currentQuestion];
+            }
+            else
+            {
+                nextquestion = null;
             }
             return nextquestion;
         }
