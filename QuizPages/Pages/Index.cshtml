@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Login Form</h2>
+ @Model.msg
+ <form method="post" asp-page="Index">
+     <table>
+         <tru>
+             <td>Username</td>
+             </td><input type="text" asp-for="@Model.username" /></td>
+             </tr>
+             <trf>
+                 <td>&nbsp;</td>
+                 <td><input type="submit" value="Login" /></td>
+            </tr>
+            </table>
+            </form>
+

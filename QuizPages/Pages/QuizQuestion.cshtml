@@ -1,0 +1,29 @@
+﻿@page
+@model QuizPages.Pages.QuizQuestionModel
+@{
+	ViewData["Title"] = "Quiz question";
+}
+
+<div class="row">
+	<div class="col-xs-offset-1 col-xs-10">
+		<div class="container">
+			<div class="form-wrapper">
+				<div class="QuizQuestion">
+					@using (Html.BeginForm("New","FrenchQuizFromFile",FormMethod.Get))
+					{
+						<form class="form">
+							<fieldset>
+								@Html.Label("Question","Quiz question")
+								<div class="form-group-row">
+									@*@foreach (var item in Model.*@
+									@Model.nextQuestion.Question
+								</div>
+							</fieldset>
+						</form>
+					}
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanguageQuiz
 {
-    internal class QuizQuestion
+    public class QuizQuestion
     {
         string? question;
         Dictionary<int, string>? answers;
@@ -15,7 +15,7 @@ namespace LanguageQuiz
        
         public enum qlevel
         {
-            easy, medium, hard
+            easy, medium, hard 
         }
         public enum qType
         {

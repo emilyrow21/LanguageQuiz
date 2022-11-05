@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LanguageQuiz
 {
-    internal abstract class QuizBase
+    public abstract class QuizBase
     {
         string? currentUser;
         Dictionary<int, QuizQuestion>? allquestions;
@@ -38,7 +39,7 @@ namespace LanguageQuiz
             return true;
         }
 
-        protected QuizQuestion nextQuestion()
+        public QuizQuestion nextQuestion()
         {
             if (currentQuestion + 1 <= allquestions.Count)
             {
@@ -56,13 +57,26 @@ namespace LanguageQuiz
         {
             allquestions = FindQuizQuestions();
         }
+        
 
         public QuizQuestion GetQuestion()
         {
             QuizQuestion q1 = null;
             q1 = nextQuestion();
- 
+
             return q1;
+
+            // QuizQuestion q2 = null;
+            // q2 = nextQuestion();
+
+            //return q2;
+
+            //QuizQuestion q3 = null;
+            //q3 = nextQuestion();
+
+            //return q3;
+
         }
     }
+
 }

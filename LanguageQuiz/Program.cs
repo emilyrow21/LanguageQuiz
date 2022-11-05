@@ -28,12 +28,12 @@ do
         
         
         if (quiz.checkanswer(UserInput) == true)
-        { 
-            Console.WriteLine("This is the right answer.");
+        {
+            Console.WriteLine("This is the right answer");
         }
         else
         {
-            Console.WriteLine("This the wrong answer.");
+            Console.WriteLine("This was the wrong answer");
         }
     }
     

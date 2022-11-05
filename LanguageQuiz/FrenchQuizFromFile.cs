@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanguageQuiz
 {
-    internal class FrenchQuizFromFile : QuizBase
+    public class FrenchQuizFromFile : QuizBase
     {
         protected override Dictionary<int, QuizQuestion> FindQuizQuestions()
         {
