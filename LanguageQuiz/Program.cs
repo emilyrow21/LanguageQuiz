@@ -11,22 +11,19 @@ QuizQuestion nextQuestion=null;
 
 do
 {
-    nextQuestion = quiz.GetQuestion();
+    nextQuestion = quiz.GetNextQuestion();
     if (nextQuestion!=null)
     {
         Console.WriteLine(nextQuestion.Question);
         foreach (var answer in nextQuestion.Answers)
         {
-            Console.Write(answer.Key + ". ");
+            Console.Write(answer.key+ ". ");
 
-            Console.WriteLine(answer.Value);
+            Console.WriteLine(answer.answerText);
 
         };
         String UserInput = Console.ReadLine();
-        
-        
-        
-        
+  
         if (quiz.checkanswer(UserInput) == true)
         {
             Console.WriteLine("This is the right answer");

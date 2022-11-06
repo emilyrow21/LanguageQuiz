@@ -13,14 +13,14 @@ namespace LanguageQuiz
         Dictionary<int, QuizQuestion>? allquestions;
         int currentQuestion = 0;
         private int score;
-        QuizQuestion nextquestion;
+        QuizQuestion quizQuestion;
 
         public int Score { get => score; }
-
+        public QuizQuestion getQuestion { get => quizQuestion; }
         public Boolean checkanswer(string response)
         {
             int answer = Convert.ToInt32(response);
-            if (answer == nextquestion.CorrectAnswer)
+            if (answer == quizQuestion.CorrectAnswer)
             {
                 score++;
                 return true;
@@ -44,13 +44,13 @@ namespace LanguageQuiz
             if (currentQuestion + 1 <= allquestions.Count)
             {
                 currentQuestion++;
-                nextquestion = allquestions[currentQuestion];
+                quizQuestion = allquestions[currentQuestion];
             }
             else
             {
-                nextquestion = null;
+                quizQuestion = null;
             }
-            return nextquestion;
+            return quizQuestion;
         }
 
         public void startQuiz()
@@ -59,22 +59,12 @@ namespace LanguageQuiz
         }
         
 
-        public QuizQuestion GetQuestion()
+        public QuizQuestion GetNextQuestion()
         {
             QuizQuestion q1 = null;
             q1 = nextQuestion();
 
             return q1;
-
-            // QuizQuestion q2 = null;
-            // q2 = nextQuestion();
-
-            //return q2;
-
-            //QuizQuestion q3 = null;
-            //q3 = nextQuestion();
-
-            //return q3;
 
         }
     }

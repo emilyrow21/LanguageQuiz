@@ -3,27 +3,52 @@
 @{
 	ViewData["Title"] = "Quiz question";
 }
-
+<form class="form" method="post" asp-page="QuizQuestion">
 <div class="row">
 	<div class="col-xs-offset-1 col-xs-10">
 		<div class="container">
 			<div class="form-wrapper">
-				<div class="QuizQuestion">
-					@using (Html.BeginForm("New","FrenchQuizFromFile",FormMethod.Get))
-					{
-						<form class="form">
+				<div class="QuizQuestion">						
 							<fieldset>
 								@Html.Label("Question","Quiz question")
 								<div class="form-group-row">
-									@*@foreach (var item in Model.*@
-									@Model.nextQuestion.Question
+									@Model.currentQuestion.Question								
 								</div>
 							</fieldset>
-						</form>
-					}
+						
+						<div class="modal-body">
+
+
+                        <table class="table table-condensed table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Choice</th>
+                                <th>Select one</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                @for(var i =0; i< Model.currentQuestion.Answers.Count;i++)
+                                {
+                                <tr>
+                                    <td>@Model.currentQuestion.Answers[i].answerText</td>
+                                    <td>    
+                                        <input name="answerbox" type="radio" value="@i"/>
+                                    </td>
+                                </tr>
+                                }
+                        </tbody>
+                        </table>
+                   </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-success" name="action" value="Next question"/>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Quit</button>
+                        
+                    </div>
+
 				</div>
 			</div>
 		</div>
 
 	</div>
 </div>
+</form>

@@ -9,7 +9,8 @@ namespace LanguageQuiz
     public class QuizQuestion
     {
         string? question;
-        Dictionary<int, string>? answers;
+        //Dictionary<int, string>? answers;
+        List<Answer>? answers;
         int correctAnswer;
         public int ID { get; set; }
        
@@ -25,9 +26,10 @@ namespace LanguageQuiz
         public qType questionType { get; set; }
 
         public string? Question { get => question; set => question = value; }
-        public Dictionary<int, string>? Answers { get => answers; set => answers = value; }
+        //public Dictionary<int, string>? Answers { get => answers; set => answers = value; }
+        public List<Answer>? Answers { get; set; }
         public int CorrectAnswer { get => correctAnswer; set => correctAnswer = value; }
         
-     
+    
     }
 }
