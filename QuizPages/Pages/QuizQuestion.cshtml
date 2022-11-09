@@ -1,7 +1,7 @@
-﻿@page
+﻿@page "{username}/{quiz}"
 @model QuizPages.Pages.QuizQuestionModel
 @{
-	ViewData["Title"] = "Quiz question";
+	ViewData["Title"] = "Quiz questions for {username}";
 }
 <form class="form" method="post" asp-page="QuizQuestion">
 <div class="row">
@@ -32,7 +32,7 @@
                                 <tr>
                                     <td>@Model.currentQuestion.Answers[i].answerText</td>
                                     <td>    
-                                        <input name="answerbox" type="radio" value="@i"/>
+                                        <input name="answerbox" type="checkbox" value="@i"/>
                                     </td>
                                 </tr>
                                 }

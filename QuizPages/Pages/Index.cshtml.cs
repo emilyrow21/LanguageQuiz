@@ -23,7 +23,7 @@ namespace QuizPages.Pages
         {
             if(!username.Equals(""))
             {
-                return RedirectToPage("QuizQuestion", new { username = username });
+                return RedirectToPage("QuizQuestion", new {username = username, quiz = "empty"});
             }
             else
             {

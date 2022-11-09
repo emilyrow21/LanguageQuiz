@@ -67,6 +67,26 @@ namespace LanguageQuiz
             return q1;
 
         }
+
+        public QuizQuestion GetNextQuestion(string username, string quizHistory)
+        { 
+            QuizQuestion q1 =null;
+            Boolean foundQuestion = false;
+            do
+            {
+                q1 = nextQuestion();
+                if(q1 == null)
+                {
+
+                    break;
+                }
+                if(!quizHistory.Contains(q1.ID.ToString()))
+                {
+                    foundQuestion = true;
+                }
+            } while (!foundQuestion);
+            return q1;
+        }
     }
 
 }
