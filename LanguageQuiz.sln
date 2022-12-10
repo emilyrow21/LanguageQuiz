@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageQuiz", "LanguageQuiz\LanguageQuiz.csproj", "{D0419FB0-0AC5-4174-BFE0-8F3F34963543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizPages", "QuizPages\QuizPages.csproj", "{FFB31A21-CC20-4155-8E8E-EEB3DA2CE7C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizPages", "QuizPages\QuizPages.csproj", "{FFB31A21-CC20-4155-8E8E-EEB3DA2CE7C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

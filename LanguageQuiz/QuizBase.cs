@@ -53,6 +53,22 @@ namespace LanguageQuiz
             return quizQuestion;
         }
 
+        public QuizQuestion nextQuizQuestionAI()
+        {
+            // Find the next question for this player:
+            // Read User profile:Get user competency, user file contains what questions this player has answered
+            PlayerFile playerFile = new PlayerFile();
+
+            // 
+            // Add up easy, medium, hard questions. Decide which category is next. Or we are done.
+            //
+            // Read question file.
+            // 
+            // Should the next question be easy, medium or hard.
+            return nextQuestion();
+
+
+        }
         public void startQuiz()
         {
             allquestions = FindQuizQuestions();

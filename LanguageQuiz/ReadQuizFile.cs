@@ -9,7 +9,7 @@ using static LanguageQuiz.QuizQuestion;
 
 namespace LanguageQuiz
 {
-    internal class ReadQuizFile : ReadFileBase
+    internal class ReadQuizFile : FileOperations
     {
         public ReadQuizFile(string? fileName)
         {

@@ -20,13 +20,18 @@ namespace QuizPages.Pages
                 quiz.startQuiz();
             }
         }
-        public void OnGet(string _username)
+        public async Task<IActionResult> OnGet(string _username)
         {
             Username = Request.RouteValues["username"].ToString();
             questionsAnswered = Request.RouteValues["quiz"].ToString();
             currentQuestion = quiz.GetNextQuestion(Username,questionsAnswered);
+            if(currentQuestion == null)
+            {
+                return RedirectToPage("./Result", new { username = Username, quiz = questionsAnswered });
+            }
             questionsAnswered = string.Format("{0}&{1}", questionsAnswered, currentQuestion.ID);
             Request.RouteValues["quiz"] = questionsAnswered;
+            return null;
         }
 
         public async Task<IActionResult> OnPostAsync()

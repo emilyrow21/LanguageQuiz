@@ -1,6 +1,6 @@
 ﻿namespace LanguageQuiz
 {
-    internal class ReadFileBase
+    internal class FileOperations
     {
         public string? FileName
         {
@@ -12,6 +12,11 @@
             string strLine = sr.ReadLine();
 
             return strLine.Split(',');
+        }
+
+        public Boolean savethefile(string[] lines)
+        {
+            return true;
         }
     }
 }
