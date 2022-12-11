@@ -41,7 +41,16 @@ namespace QuizPages.Pages
 
             Username = Request.RouteValues["username"].ToString();
             questionsAnswered = Request.RouteValues["quiz"].ToString();
-            // TODO: Save result for end
+            // Put the answer in the query string to check at the end
+            int answerProvided = 0;
+            foreach(int opt in answerbox)
+            { 
+                if(opt==1)
+                    break;
+                answerProvided++;
+            }
+            questionsAnswered = questionsAnswered + "&" + System.Convert.ToString(answerProvided-1);
+           
             return RedirectToPage("./QuizQuestion",new {username = Username, quiz = questionsAnswered });
         }
 
