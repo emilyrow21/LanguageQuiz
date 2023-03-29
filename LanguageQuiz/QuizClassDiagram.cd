@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="LanguageQuiz.FrenchQuiz">
-    <Position X="1" Y="2.75" Width="1.5" />
+    <Position X="0.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FrenchQuiz.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LanguageQuiz.QuizBase" Collapsed="true">
-    <Position X="1" Y="1.25" Width="1.5" />
+  <Class Name="LanguageQuiz.QuizBase">
+    <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EBAAAAAAAAAAAAiCgAAIAAAIEgBAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>EBAAAAAgAAAAAAiCgAAIAAAIAgAAAAAAWEAEAAAACAA=</HashCode>
       <FileName>QuizBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LanguageQuiz.QuizQuestion">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="8.25" Y="3.5" Width="1.5" />
     <NestedTypes>
       <Enum Name="LanguageQuiz.QuizQuestion.qlevel" Collapsed="true">
         <TypeIdentifier>
@@ -31,6 +31,41 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAEVAAAhEQAAAAAAAAAA=</HashCode>
       <FileName>QuizQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LanguageQuiz.FrenchQuizFromFile">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FrenchQuizFromFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LanguageQuiz.ReadQuizFile" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReadQuizFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LanguageQuiz.userProfile">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>userProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LanguageQuiz.Answer">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Answer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LanguageQuiz.FileOperations" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>FileOperations.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

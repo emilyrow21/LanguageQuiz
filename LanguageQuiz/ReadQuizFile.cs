@@ -39,6 +39,7 @@ namespace LanguageQuiz
                     Enum.TryParse(values[2], out qt);
                     f1.questionType = qt;
 
+
                     f1.Question = values[3];
 
                     if (qt == qType.multiChoice)

@@ -10,6 +10,7 @@ namespace LanguageQuiz
     {
         protected override Dictionary<int, QuizQuestion> FindQuizQuestions()
         {
+            //easy =0   medium = 1  hard =2
             //easy question
             Dictionary<int,QuizQuestion> frenchQuestions = new Dictionary<int,QuizQuestion>();
             QuizQuestion f1 = new QuizQuestion();
@@ -45,14 +46,105 @@ namespace LanguageQuiz
 
             // hard question example
             f1 = new QuizQuestion();
-            f1.Question = "Comment diriez-vous 'Do you like French?' en Francais (plurel)";
+            f1.Question = "Comment diriez-vous 'Do you like French?' en Français (plurel)";
             f1.Answers = new List<Answer>();
-            f1.Answers.Add(new Answer(0, "Vous aimez le Francais, non?"));
-            f1.Answers.Add (new Answer(1, "Tu aimes la France?"));
-            f1.Answers.Add (new Answer(2, "Vous aimes Francais, non?"));
+            f1.Answers.Add(new Answer(0, "Tu aimes la France?"));
+            f1.Answers.Add (new Answer(1, "Vous aimez le Français non?"));
+            f1.Answers.Add (new Answer(2, "Vous aimes Français non?"));
+            f1.Answers.Add(new Answer(3, "Tu aimez Francais?"));
             f1.CorrectAnswer = 1;
-            frenchQuestions.Add(1, f1);
+            frenchQuestions.Add(0, f1);
             return frenchQuestions;
+
+            //medium
+            f1 = new QuizQuestion();
+            f1.Question = "Select the option which is postive";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, ""));
+            f1.Answers.Add(new Answer(1, ""));
+            f1.Answers.Add(new Answer(2, ""));
+            f1.CorrectAnswer = 1;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //easy
+            f1 = new QuizQuestion();
+            f1.Question = "how would you greet someone you see in French?";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, "Au revoir"));
+            f1.Answers.Add(new Answer(1, "Aujourd'hui je suis fatiguee"));
+            f1.Answers.Add(new Answer(2, "Salut ça va ?"));
+            f1.CorrectAnswer = 2;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //hard
+            f1 = new QuizQuestion();
+            f1.Question = "Quel est faux ici? ' ";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, ""));
+            f1.Answers.Add(new Answer(1, ""));
+            f1.Answers.Add(new Answer(2, ""));
+            f1.CorrectAnswer = 1;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //hard
+            f1 = new QuizQuestion();
+            f1.Question = " ";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, ""));
+            f1.Answers.Add(new Answer(1, ""));
+            f1.Answers.Add(new Answer(2, ""));
+            f1.CorrectAnswer = 0;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //medium
+            f1 = new QuizQuestion();
+            f1.Question = " ";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, ""));
+            f1.Answers.Add(new Answer(1, ""));
+            f1.Answers.Add(new Answer(2, ""));
+            f1.CorrectAnswer = 1;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //easy
+            f1 = new QuizQuestion();
+            f1.Question = "What word in French means 'dog'?";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, "chien"));
+            f1.Answers.Add(new Answer(1, "rien"));
+            f1.Answers.Add(new Answer(2, "chat"));
+            f1.CorrectAnswer = 0;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //hard
+            f1 = new QuizQuestion();
+            f1.Question = "Select the option in French which translates to 'Today will be a good day because i am meeting my friends'.";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, ""));
+            f1.Answers.Add(new Answer(1, ""));
+            f1.Answers.Add(new Answer(2, ""));
+            f1.CorrectAnswer = 2;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+            //easy
+            f1 = new QuizQuestion();
+            f1.Question = "What is brother in French?";
+            f1.Answers = new List<Answer>();
+            f1.Answers.Add(new Answer(0, "sœur"));
+            f1.Answers.Add(new Answer(1, "Frère"));
+            f1.Answers.Add(new Answer(2, "Bien"));
+            f1.CorrectAnswer = 1;
+            frenchQuestions.Add(0, f1);
+            return frenchQuestions;
+
+
         }
     }
 }

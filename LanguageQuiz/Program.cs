@@ -1,9 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+
+
+
 using LanguageQuiz;
 
 Console.WriteLine("French quiz");
 
-FrenchQuizFromFile quiz = new FrenchQuizFromFile();
+French quiz = new FrenchQuiz();
 
 quiz.startQuiz();
 
